@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_journee"
         android:supportsRtl="true"
         android:theme="@style/Theme.Journee"
+        android:name=".App"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
