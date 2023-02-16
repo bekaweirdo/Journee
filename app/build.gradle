@@ -57,6 +57,7 @@ dependencies {
     implementation libs.androidx.activity.compose
 //    implementation platform('androidx.compose:compose-bom:2022.10.00')
     implementation libs.bundles.compose
+    implementation libs.lottie
     testImplementation libs.junit
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.androidx.test.espresso.core
