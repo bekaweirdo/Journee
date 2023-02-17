@@ -5,6 +5,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -21,5 +22,3 @@ include ':core:components'
 include ':feature'
 include ':feature:onboarding'
 include ':feature:splash'
-include ':buildsrc'
-include ':buildsrc2'
