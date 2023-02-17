@@ -35,4 +35,5 @@ dependencies {
     implementation(libs.bundles.compose)
     api(libs.navigation)
     debugImplementation(libs.bundles.compose.debug)
+    implementation(project(":feature:splash"))
 }
