@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Journee"
 include ':app'
+include ':core'
+include ':core:navigation'
