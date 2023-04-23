@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.veux.journee'
-    compileSdk libs.versions.compileSdk.get().toInteger()
+    compileSdk libs.versions.sdk.compile.get().toInteger()
 
     defaultConfig {
         applicationId "com.veux.journee"
-        minSdk libs.versions.minSdk.get().toInteger()
-        targetSdk libs.versions.targetSdk.get().toInteger()
+        minSdk libs.versions.sdk.min.get().toInteger()
+        targetSdk libs.versions.sdk.target.get().toInteger()
         versionCode 1
         versionName "1.0"
 
@@ -52,16 +52,19 @@ android {
 
 dependencies {
 
-    implementation libs.androidx.core.ktx
-    implementation libs.androidx.lifecycle.runtime
-    implementation libs.androidx.activity.compose
+//    implementation libs.androidx.core.ktx
+//    implementation libs.androidx.lifecycle.runtime
+//    implementation libs.androidx.activity.compose
 //    implementation platform('androidx.compose:compose-bom:2022.10.00')
-    implementation libs.bundles.compose
-    testImplementation libs.junit
-    androidTestImplementation libs.androidx.test.ext.junit
-    androidTestImplementation libs.androidx.test.espresso.core
+//    implementation libs.bundles.compose
+//    testImplementation libs.junit
+//    androidTestImplementation libs.androidx.test.ext.junit
+//    androidTestImplementation libs.androidx.test.espresso.core
 //    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
-    androidTestImplementation libs.androidx.compose.ui.test.junit4
-    debugImplementation libs.compose.tooling
-    debugImplementation libs.compose.test.manifest
+//    androidTestImplementation libs.androidx.compose.ui.test.junit4
+//    debugImplementation libs.compose.tooling
+//    debugImplementation libs.compose.test.manifest
+
+    implementation(project(":core:ui"))
+    implementation(project(":core:navigation"))
 }

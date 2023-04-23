@@ -16,3 +16,4 @@ rootProject.name = "Journee"
 include ':app'
 include ':core'
 include ':core:navigation'
+include ':core:ui'

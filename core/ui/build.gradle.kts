@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.veux.navigation"
+    namespace = "com.veux.ui"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.veux.navigation"
+        applicationId = "com.veux.ui"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -37,10 +37,14 @@ android {
 }
 
 dependencies {
+    //Compose
+    api(platform(libs.compose.bom))
+    api(libs.bundles.compose)
+    debugApi(libs.bundles.compose.debug)
 
-    implementation(platform(libs.compose.bom))
-    implementation(libs.bundles.compose)
-    debugImplementation(libs.bundles.compose.debug)
+    api(libs.bundles.lyfecycle)
+    api(libs.coil)
 
-    api(libs.navigation)
+    androidTestApi(platform(libs.compose.bom))
+    androidTestApi(libs.bundles.test.android)
 }
